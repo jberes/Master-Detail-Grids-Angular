@@ -1,0 +1,30 @@
+<div class="row-layout row">
+  <igx-grid [data]="northwindRestCustomers" [allowFiltering]="true" filterMode="excelStyleFilter" [autoGenerate]="false" width="100%" height="100%" displayDensity="cosy" primaryKey="CustomerID" class="grid">
+    <igx-column field="CustomerID" header="CustomerID" title="CustomerID" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="CompanyName" header="CompanyName" title="CompanyName" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="ContactName" header="ContactName" title="ContactName" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="ContactTitle" header="ContactTitle" title="ContactTitle" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="Address" header="Address" title="Address" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="City" header="City" title="City" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="Region" header="Region" title="Region" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="Country" header="Country" title="Country" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="Phone" header="Phone" title="Phone" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="Fax" header="Fax" title="Fax" dataType="string" [sortable]="true"></igx-column>
+  </igx-grid>
+</div>
+<div class="row-layout row">
+  <igx-grid [data]="northwindRestOrders" [allowFiltering]="true" filterMode="excelStyleFilter" [autoGenerate]="false" width="100%" height="100%" displayDensity="cosy" primaryKey="OrderID" class="grid">
+    <igx-column field="OrderID" header="OrderID" title="OrderID" dataType="number" [sortable]="true"></igx-column>
+    <igx-column field="CustomerID" header="CustomerID" title="CustomerID" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="EmployeeID" header="EmployeeID" title="EmployeeID" dataType="number" [sortable]="true"></igx-column>
+    <igx-column field="OrderDate" header="OrderDate" title="OrderDate" dataType="number" [sortable]="true"></igx-column>
+    <igx-column field="RequiredDate" header="RequiredDate" title="RequiredDate" dataType="number" [sortable]="true"></igx-column>
+    <igx-column field="ShipVia" header="ShipVia" title="ShipVia" dataType="number" [sortable]="true"></igx-column>
+    <igx-column field="Freight" header="Freight" title="Freight" dataType="number" [sortable]="true"></igx-column>
+    <igx-column field="ShipName" header="ShipName" title="ShipName" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="ShipAddress" header="ShipAddress" title="ShipAddress" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="ShipCity" header="ShipCity" title="ShipCity" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="ShipRegion" header="ShipRegion" title="ShipRegion" dataType="string" [sortable]="true"></igx-column>
+    <igx-column field="ShipCountry" header="ShipCountry" title="ShipCountry" dataType="string" [sortable]="true"></igx-column>
+  </igx-grid>
+</div>
