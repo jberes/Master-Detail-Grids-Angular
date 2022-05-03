@@ -17,6 +17,12 @@ export class MasterViewComponent implements OnInit {
   ngOnInit() {
     // depending on implementation, data subscriptions might need to be unsubbed later
     this.northwindRestService.getCustomers().subscribe(data => this.northwindRestCustomers = data);
-    this.northwindRestService.getOrders().subscribe(data => this.northwindRestOrders = data);
+    //this.northwindRestService.getOrders().subscribe(data => this.northwindRestOrders = data);
   }
+
+  rowSelected(selection: any){
+     const customerId = selection[0];
+     console.log(customerId);
+     this.northwindRestService.getOrders(customerId).subscribe(data => this.northwindRestOrders = data);
+   }
 }
