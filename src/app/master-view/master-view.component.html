@@ -2,7 +2,7 @@
   <igx-grid [data]="northwindRestCustomers" [allowFiltering]="true" 
   filterMode="excelStyleFilter" [autoGenerate]="false" width="100%" height="100%" 
   displayDensity="cosy" primaryKey="CustomerID" class="grid"
-  rowSelection="single" [hideRowSelectors]="true" (rowSelected)="rowSelected($event.newSelection)">
+  rowSelection="single" [hideRowSelectors]="true" (rowSelectionChanging)="rowSelected($event.newSelection)">
     <igx-column field="CustomerID" header="CustomerID" title="CustomerID" dataType="string" [sortable]="true"></igx-column>
     <igx-column field="CompanyName" header="CompanyName" title="CompanyName" dataType="string" [sortable]="true"></igx-column>
     <igx-column field="ContactName" header="ContactName" title="ContactName" dataType="string" [sortable]="true"></igx-column>
